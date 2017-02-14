@@ -1,5 +1,6 @@
 function ReverseString(){
 	this.reverseString = function(input){
+		// Check for invalid input
 		if(typeof input != 'string'){
 			return 'invalid input';
 		}
@@ -12,6 +13,7 @@ function ReverseString(){
 		reversed = reversed.reverse();
 		// Join back the array to for a string.
 		reversed = reversed.join("");
+		// Check for palindromes
 		if(reversed === input){
 			return true;
 		}else{

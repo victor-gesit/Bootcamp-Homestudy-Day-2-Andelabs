@@ -16,7 +16,7 @@ function Words(){
 			for(var j = i+1; j <= k; j++){
 				if(wordArray[i] === wordArray[j] && wordArray[j] !== null){
 					counter +=1;
-					// Remove found word
+					// Remove found word to avoid repetition
 					wordArray[j] = null;
 				}
 			}
