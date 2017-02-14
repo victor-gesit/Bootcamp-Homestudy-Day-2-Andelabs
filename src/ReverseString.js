@@ -6,11 +6,8 @@ function ReverseString(){
 		if(input.length === 0){
 			return null;
 		}
-		// Split input into array
 		var reversed = input.split("");
-		// Reverse the array.
 		reversed = reversed.reverse();
-		// Join back the array to for a string.
 		reversed = reversed.join("");
 		if(reversed === input){
 			return true;
