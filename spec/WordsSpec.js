@@ -1,4 +1,5 @@
 describe("words()", function() {
+  const words = new Words().words
   it("counts one word", function() {
     var expectedCounts = { word: 1 };
     expect(words("word")).toEqual(expectedCounts);
