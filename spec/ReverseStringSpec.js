@@ -1,4 +1,7 @@
+
+
 describe("Produce the reverse order of a word: ", function() {
+  const reverseString = new ReverseString().reverseString;
   describe("Case for en empty string", function() {
 
     it("should return null for empty string", function() {
@@ -40,7 +43,7 @@ describe("Produce the reverse order of a word: ", function() {
   });
   describe("Case for invalid input", function(){
     it("should return 'invalid input' for 20", function(){
-      expectt(reverseString(20)).toEqual('invalid input');
+      expect(reverseString(20)).toEqual('invalid input');
     });
     it("should return 'invalid input' for [2,3]", function(){
       expect(reverseString([2,3])).toEqual('invalid input');
